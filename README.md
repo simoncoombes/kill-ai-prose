@@ -2,7 +2,7 @@
 
 A prompt that stops language models from writing like language models. Use it for technical docs, product copy, release notes, and anything else that goes out under your name.
 
-The prompt is in [human-writing-prompt.md](human-writing-prompt.md). Paste it into a system prompt, custom instructions, a Claude Project, or a CLAUDE.md file, then fill in the context block at the bottom. The writing samples in that block matter more than any single rule, so add a few if you can.
+The prompt is in [human-writing-prompt.md](human-writing-prompt.md). Paste it into a system prompt, custom instructions, a Claude Project, or a CLAUDE.md file. The context block at the bottom is filled in for this repo's owner. If you're using the prompt elsewhere, replace that block with your own audience, destinations, house style, and two to five samples of your writing. The samples matter more than any single rule.
 
 ## What it covers
 

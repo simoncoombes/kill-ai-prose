@@ -159,10 +159,66 @@ Before:
 After:
 "The new caching layer cuts median API response time from 340 ms to 90 ms. It's on by default for accounts created after March 1. Older accounts can turn it on under Settings > Performance."
 
-## Context (fill in)
+## Context
 
-- What this piece is:
-- Who reads it and what they already know:
-- Where it's published (plain-text email, CMS field, markdown docs, web page):
-- House style notes (spelling variant, quote style, how we write ranges, product names):
-- Two to five short samples of our writing to match in tone and rhythm:
+**What this piece is:** Usually one of four things. Markdown docs and READMEs for
+software projects. Product and web copy for the sites those projects ship to.
+Plain-text email and messages. Release notes, changelogs, and PR descriptions.
+If the request doesn't say which, ask or infer from where the text will land.
+
+**Who reads it and what they already know:** Developers and technically literate
+users who can read code and a stack trace. They don't need a concept explained
+before the instruction that uses it. They do need the exact flag, path, error
+string, or version. Product copy for the game and finance sites reaches a wider
+audience who won't know the jargon, so name things plainly there.
+
+**Where it's published:** Markdown rendered by GitHub, static sites built by
+Vite, and plain-text email. Check the destination before writing. Markdown
+syntax must not appear in email bodies or CMS fields.
+
+**House style notes:**
+
+- US spelling and straight quotes. The `tradefloor` README currently uses
+  "licence"; that's an inconsistency, not the house style.
+- READMEs and long markdown are hard-wrapped at roughly 78 columns. Match the
+  wrapping of the file you're editing.
+- Indented code blocks are used for directory listings and file manifests, with
+  the description aligned in a second column.
+- Project names are lowercase when they are the binary or package name
+  (`agentpane`, `tradefloor`, `textgames`), title case in prose headings for
+  the consumer products (Margin Call, Text Games).
+- Ranges in prose are written "5 to 10", not "5-10".
+- Say what the thing will not do, early. "It is read-only. It cannot send
+  prompts, edit your files, or kill an agent."
+- The samples below sometimes use a spaced hyphen where an em dash would go.
+  Don't copy that. Use a comma, parentheses, or two sentences, per the
+  formatting rules above.
+
+**Samples to match in tone and rhythm:**
+
+> Another terminal UI harness. Written in Go. With a tree in it. I know - how
+> original.
+
+> Claude Code fans out to eight subagents and the transcript turns into a wall
+> of scrolling text. Worse: one of them hits a permission prompt and then just
+> waits, silently, while you are looking at a different window.
+
+> agentpane draws the tree live in a second pane. One row per agent, what it is
+> doing right now, and a flag when something is blocked on you.
+
+> A binary into `~/.local/bin`, then the hooks into `~/.claude/settings.json`.
+> The installer shows you the diff and asks first. Add `--autopane` and the pane
+> opens itself with every session, in iTerm2, tmux, WezTerm or kitty. Undo it
+> all with `agentpane install --uninstall`.
+
+> Games made of text, at textgames.io.
+
+> A stock market and business simulator that runs entirely in your browser.
+> Trade stocks, options, crypto, bonds, and forex across 108 companies in a
+> fully simulated economy.
+
+What these have in common: the first line says what the thing is with no
+throat-clearing. Sentences are short because the thought is short, not for
+rhythm. Concrete nouns everywhere (eight subagents, 108 companies, `~/.local/bin`).
+Dry humor arrives flat and then stops, never as a closing zinger. Limitations
+are stated as facts in the main text.
